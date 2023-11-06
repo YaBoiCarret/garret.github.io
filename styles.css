@@ -140,8 +140,54 @@
 .row:nth-child(even) .square {
     flex-direction: column-reverse;
 }
-@media (max-width: 768px) {
-    .row {
-        flex-direction: column; /* Stack squares vertically on smaller screens */
+@media only screen and (max-width: 600px) {
+    .content {
+        margin-top: 340px;        
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 0px; 
+        padding: 0px; 
+        max-width: 1000px; 
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box; 
     }
+    .welcome-text {
+        position: absolute; 
+        top: 39%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        font-size: 28px; 
+        color: rgb(71, 71, 71);
+        text-align: center; 
+    }
+    .description {
+        flex-grow: 1; /* Allow the description to grow and take up available space */
+        display: flex; /* Use flexbox to align the content */
+        justify-content: center; /* Center-align the content horizontally */
+        align-items: center; /* Center-align the content vertically */
+        padding: px; /* Add padding for better readability */
+        
+    }
+    
+    /* Style for the text inside the description */
+    .description p {
+        max-width: 110%; /* Ensure the text doesn't exceed the available space */
+        font-size: 16px; /* Set an initial font size */
+        text-align: center; /* Center-align the text */
+        transition: font-size 0.3s ease; /* Add a smooth transition for font size changes */
+        
+    }
+    .square {
+        flex: 1; /* Equal space distribution within the row */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Center content horizontally in the square */
+        align-items: center; /* Center content vertically in the square */
+        padding: 10px; /* Padding inside each square */
+        /* Add other styling as needed */
+    }
+    
+    
 }
