@@ -1,217 +1,222 @@
-
 .profile-pic {
-    width: 200px; 
+    width: 200px;
     height: 200px;
-    border-radius: 50%; 
-    object-fit: cover; 
-    position: absolute; 
-    top: 25px; 
-    left: 20px; 
-    z-index: 3; 
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    z-index: 3;
 }
+
 /* Remove the absolute positioning and transform */
 .resume-image {
     display: block;
-    width: 80%; 
+    width: 80%;
     max-width: 800px;
-    margin: 0 auto; 
-    border: 10px solid transparent; 
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+    margin: 0 auto;
+    border: 10px solid transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-/* Style the resume-section itself */
 .resume-section {
-    width: 100%; /* Span the full width */
-    padding: 50px 0; /* Add padding to the top and bottom */
-    text-align: center; /* Center the content */
-    clear: both; /* Clear any floats */
-    /* Place other properties here to adjust layout */
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    clear: both;
 }
-
-/* Rest of the styles remain the same */
 
 .banner {
-    background-image: url('pictures/DSCF0291.JPG'); /* Add the path to your banner image */
+    background-image: url('pictures/DSCF0291.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%; /* Make the banner span the entire width of the page */
-    height: 210px; /* Set the desired height for the banner */
-    position: absolute; /* Set position to absolute */
-    top: 20px; /* Adjust the top position as needed */
-    left: 0; /* Ensure it starts from the left edge */
-    z-index: 2; /* Ensure the banner is below the profile picture */
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 2;
 }
+
+.navigation {
+    text-align:left;
+    margin-left: 20%;
+    color: white;
+    position: sticky;
+    font-size: 38px;
+    z-index: 1000;
+    margin-top: 170px;
+}
+
+.navigation a {
+    /* Example Styles */
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #007bff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 /* Existing styles for welcome-text */
 .welcome-text {
-    position: absolute; 
-    top: 33%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    font-size: 48px; 
-    color: rgb(71, 71, 71); 
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: rgb(71, 71, 71);
     text-align: center;
-    background: linear-gradient(to right, #f8f8f8, #e0e0e0); 
-    padding: 5px; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background: linear-gradient(to right, #f8f8f8, #e0e0e0);
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 70%;
 }
 
-/* Additional styles for welcome-text */
 .welcome-text i {
-    font-style: italic; /* Example: italicize the text */
-    font-weight: bold; /* Example: make the text bold */
+    font-style: italic;
+    font-weight: bold;
 }
-.tital-professional{
+
+.tital-professional {
     position: absolute;
-    left:40px;
+    left: 40px;
     font-size: 48px;
     color: rgb(71, 71, 71);
-    top: 390px; 
+    top: 390px;
 }
-.title-resume{
+
+.title-resume {
     left: 40px;
-
 }
-/* Your existing styles here */
 
-/* Style for the content section */
 .content {
-    margin-top: 420px; /* Adjust if necessary to fit with your page layout */
+    margin-top: 420px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center children (rows) horizontally */
-    gap: 20px; /* Spacing between rows */
-    padding: 20px; /* Add spacing around the content */
-    max-width: 1000px; /* Adjust as needed */
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    box-sizing: border-box; /* Include padding and border in the width */
+    box-sizing: border-box;
 }
 
-
-/* Style for each row */
 .row {
-    width: 100%; /* Ensure the row takes full width of its container */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center items (squares) horizontally */
-    margin-bottom: 20px; /* Add spacing between rows */
-    background: linear-gradient(to right, #f8f8f8, #e0e0e0); 
-    padding: 20px; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #f8f8f8, #e0e0e0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Style for each square */
 .square {
-    flex: 1; /* Equal space distribution within the row */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content horizontally in the square */
-    align-items: center; /* Center content vertically in the square */
-    padding: 10px; /* Padding inside each square */
-    /* Add other styling as needed */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
-/* Style for the image wrappers */
 .image-wrapper {
-    overflow: hidden; 
-    position: relative; 
+    overflow: hidden;
+    position: relative;
 }
 
-/* Style for the images themselves */
 .image-wrapper img {
     width: 100%;
     height: auto;
-    display: block; 
-    border: 10px solid transparent; 
+    display: block;
+    border: 10px solid transparent;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 800px;
 }
 
-
 .description {
     flex-grow: 1;
-    display: flex; 
+    display: flex;
     justify-content: center;
-    align-items: center; 
-    padding: 10px; 
+    align-items: center;
+    padding: 10px;
 }
 
-/* Style for the text inside the description */
-.description p {
-    max-width: 100%; 
-    font-size: 16px; 
-    text-align: center; 
-    transition: font-size 0.3s ease; 
-}
-
-
-/* Alternate the order of squares in even rows */
 .row:nth-child(even) .square {
     flex-direction: column-reverse;
 }
 
 @media (max-width: 100px) {
     .content {
-        margin-top: 340px;        
+        margin-top: 340px;
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        gap: 0px; 
-        padding: 0px; 
-        max-width: 1000px; 
+        align-items: center;
+        gap: 0px;
+        padding: 0px;
+        max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
-        box-sizing: border-box; 
+        box-sizing: border-box;
     }
+
     .welcome-text {
-        position: absolute; 
-        top: 39%; 
-        left: 50%; 
+        position: absolute;
+        top: 39%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        font-size: 28px; 
+        font-size: 28px;
         color: rgb(71, 71, 71);
-        text-align: center; 
+        text-align: center;
         width: 80%;
     }
+
     .description {
-        flex-grow: 1; /* Allow the description to grow and take up available space */
-        display: flex; /* Use flexbox to align the content */
-        justify-content: center; /* Center-align the content horizontally */
-        align-items: center; /* Center-align the content vertically */
-        padding: px; /* Add padding for better readability */
-        
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: px;
     }
-    
-    /* Style for the text inside the description */
+
     .description p {
-        max-width: 110%; /* Ensure the text doesn't exceed the available space */
-        font-size: 16px; /* Set an initial font size */
-        text-align: center; /* Center-align the text */
-        transition: font-size 0.3s ease; /* Add a smooth transition for font size changes */
-        
+        max-width: 110%;
+        font-size: 16px;
+        text-align: center;
+        transition: font-size 0.3s ease;
     }
+
     .square {
-        flex: 1; /* Equal space distribution within the row */
+        flex: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center; /* Center content horizontally in the square */
-        align-items: center; /* Center content vertically in the square */
-        padding: 10px; /* Padding inside each square */
-        /* Add other styling as needed */
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
+
     .profile-pic {
-        width: 100px; 
+        width: 100px;
         height: 100px;
-        border-radius: 50%; 
-        object-fit: cover; 
-        position: absolute; 
-        top: 25px; 
-        left: 20px; 
-        z-index: 3; 
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        top: 25px;
+        left: 20px;
+        z-index: 3;
     }
-    
-    
+
+
 }
