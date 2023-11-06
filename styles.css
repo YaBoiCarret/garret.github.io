@@ -1,23 +1,22 @@
 
 .profile-pic {
-    width: 200px; /* Set the desired width and height for your circular image */
+    width: 200px; 
     height: 200px;
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Keeps the image within the circular shape */
-    position: absolute; /* Set position to absolute */
-    top: 25px; /* Adjust the top position as needed */
-    left: 20px; /* Adjust the left position as needed */
-    z-index: 3; /* Ensure the profile picture is on top */
+    border-radius: 50%; 
+    object-fit: cover; 
+    position: absolute; 
+    top: 25px; 
+    left: 20px; 
+    z-index: 3; 
 }
 /* Remove the absolute positioning and transform */
 .resume-image {
     display: block;
-    width: 80%; /* Set to desired width, with 80% as an example */
-    max-width: 800px; /* Set a max-width to keep it from being too large */
-    margin: 0 auto; /* Centers the image in the container */
-    border: 10px solid transparent; /* Maintain the transparent border */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Maintain the shadow */
-    /* Remove the position and transform properties */
+    width: 80%; 
+    max-width: 800px;
+    margin: 0 auto; 
+    border: 10px solid transparent; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 }
 
 /* Style the resume-section itself */
@@ -45,14 +44,17 @@
 }
 /* Existing styles for welcome-text */
 .welcome-text {
-    position: absolute; /* Corrected 'position' value */
-    top: 32%; /* Adjust the vertical position as needed */
-    left: 50%; /* Adjust the horizontal position as needed */
-    transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
-    font-size: 48px; /* Adjust the font size as needed */
-    color: rgb(71, 71, 71); /* Adjust the text color */
-    text-align: center; /* Center-align the text */
-    /* Add any additional styles you want here */
+    position: absolute; 
+    top: 33%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 48px; 
+    color: rgb(71, 71, 71); 
+    text-align: center;
+    background: linear-gradient(to right, #f8f8f8, #e0e0e0); 
+    padding: 5px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Additional styles for welcome-text */
@@ -64,7 +66,7 @@
 
 /* Style for the content section */
 .content {
-    margin-top: 330px; /* Adjust if necessary to fit with your page layout */
+    margin-top: 350px; /* Adjust if necessary to fit with your page layout */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center children (rows) horizontally */
@@ -83,10 +85,10 @@
     display: flex;
     justify-content: center; /* Center items (squares) horizontally */
     margin-bottom: 20px; /* Add spacing between rows */
-    background: linear-gradient(to right, #f8f8f8, #e0e0e0); /* Fading background */
-    padding: 20px; /* Add padding inside the row */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background: linear-gradient(to right, #f8f8f8, #e0e0e0); 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 /* Style for each square */
@@ -102,37 +104,35 @@
 
 /* Style for the image wrappers */
 .image-wrapper {
-    overflow: hidden; /* Hide any overflow from images */
-    position: relative; /* Position relative for absolute positioning of images */
+    overflow: hidden; 
+    position: relative; 
 }
 
 /* Style for the images themselves */
 .image-wrapper img {
     width: 100%;
     height: auto;
-    display: block; /* Remove any extra spacing below images */
-    border: 10px solid transparent; /* Add a transparent border around the image */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow for the floating effect */
+    display: block; 
+    border: 10px solid transparent; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     max-width: 800px;
 }
 
-/* Style for the description section */
+
 .description {
-    flex-grow: 1; /* Allow the description to grow and take up available space */
-    display: flex; /* Use flexbox to align the content */
-    justify-content: center; /* Center-align the content horizontally */
-    align-items: center; /* Center-align the content vertically */
-    padding: 10px; /* Add padding for better readability */
-    
+    flex-grow: 1;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    padding: 10px; 
 }
 
 /* Style for the text inside the description */
 .description p {
-    max-width: 100%; /* Ensure the text doesn't exceed the available space */
-    font-size: 16px; /* Set an initial font size */
-    text-align: center; /* Center-align the text */
-    transition: font-size 0.3s ease; /* Add a smooth transition for font size changes */
-    
+    max-width: 100%; 
+    font-size: 16px; 
+    text-align: center; 
+    transition: font-size 0.3s ease; 
 }
 
 
@@ -187,6 +187,16 @@
         align-items: center; /* Center content vertically in the square */
         padding: 10px; /* Padding inside each square */
         /* Add other styling as needed */
+    }
+    .profile-pic {
+        width: 100px; 
+        height: 100px;
+        border-radius: 50%; 
+        object-fit: cover; 
+        position: absolute; 
+        top: 25px; 
+        left: 20px; 
+        z-index: 3; 
     }
     
     
