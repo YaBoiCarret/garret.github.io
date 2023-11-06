@@ -63,11 +63,22 @@
     font-style: italic; /* Example: italicize the text */
     font-weight: bold; /* Example: make the text bold */
 }
+.tital-professional{
+    position: absolute;
+    left:40px;
+    font-size: 48px;
+    color: rgb(71, 71, 71);
+    top: 390px; 
+}
+.title-resume{
+    left: 40px;
+
+}
 /* Your existing styles here */
 
 /* Style for the content section */
 .content {
-    margin-top: 350px; /* Adjust if necessary to fit with your page layout */
+    margin-top: 420px; /* Adjust if necessary to fit with your page layout */
     display: flex;
     flex-direction: column;
     align-items: center; /* Center children (rows) horizontally */
@@ -141,7 +152,8 @@
 .row:nth-child(even) .square {
     flex-direction: column-reverse;
 }
-@media only screen and (max-width: 600px) {
+
+@media (max-width: 100px) {
     .content {
         margin-top: 340px;        
         display: flex;
@@ -162,7 +174,7 @@
         font-size: 28px; 
         color: rgb(71, 71, 71);
         text-align: center; 
-        width: 70%;
+        width: 80%;
     }
     .description {
         flex-grow: 1; /* Allow the description to grow and take up available space */

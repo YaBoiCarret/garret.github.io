@@ -1,21 +1,44 @@
+function resizeText() {
+    // Wait for all images to load before calculating sizes
+    const images = Array.from(document.images);
+    let loadedImages = 0;
+
+    images.forEach((img) => {
+        if (img.complete) {
+            loadedImages++;
+        } else {
+            img.addEventListener('load', imageLoaded);
+        }
+    });
+
+    // Function to call when an image is loaded
+    function imageLoaded() {
+        this.removeEventListener('load', imageLoaded);
+        loadedImages++;
+        if (loadedImages === images.length) {
+            adjustTextSize();
+        }
+    }
+
+    // Call immediately if all images are already loaded
+    if (loadedImages === images.length) {
+        adjustTextSize();
+    }
+}
+
 function adjustTextSize() {
     const descriptions = document.querySelectorAll('.description');
 
     descriptions.forEach(description => {
         const text = description.querySelector('.text-container'); // ensure there's a text container
-        if (!text) return; // If there is no text container, do nothing
-        
         const containerHeight = description.offsetHeight;
-        let newFontSize;
 
+        // Calculate a new font size based on some ratio or specific logic
+        // Example: simple ratio (you will need to adjust this logic to suit your needs)
+        let newFontSize = containerHeight / 10; // This is arbitrary. You need to decide how to calculate this.
 
-        if (window.innerWidth <= 768) {   
-            newFontSize = Math.min(containerHeight / 20, 18); 
-        } else {
-             newFontSize = Math.min(containerHeight / 10, 22); 
-        }
-
-        text.style.fontSize = Math.max(newFontSize, 12) + 'px';
+        // Set the new font size
+        text.style.fontSize = newFontSize + 'px';
     });
 }
 
@@ -24,18 +47,3 @@ window.addEventListener('load', resizeText);
 
 // Attach the debounced resize event listener
 window.addEventListener('resize', debounce(resizeText, 250));
-
-function debounce(func, wait, immediate) {
-    var timeout;
-    return function() {
-        var context = this, args = arguments;
-        var later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        var callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-}
