@@ -33,9 +33,8 @@ function adjustTextSize() {
         const text = description.querySelector('.text-container'); // ensure there's a text container
         const containerHeight = description.offsetHeight;
 
-        // Calculate a new font size based on some ratio or specific logic
-        // Example: simple ratio (you will need to adjust this logic to suit your needs)
-        let newFontSize = containerHeight / 10; // This is arbitrary. You need to decide how to calculate this.
+       
+        let newFontSize = containerHeight / 11;
 
         // Set the new font size
         text.style.fontSize = newFontSize + 'px';

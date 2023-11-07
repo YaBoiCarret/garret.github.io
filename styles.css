@@ -6,10 +6,9 @@
     position: absolute;
     top: 25px;
     left: 20px;
-    z-index: 3;
+    z-index: 2;
 }
 
-/* Remove the absolute positioning and transform */
 .resume-image {
     display: block;
     width: 80%;
@@ -36,16 +35,16 @@
     position: absolute;
     top: 20px;
     left: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .navigation {
     text-align:left;
     margin-left: 20%;
     color: white;
-    position: sticky;
+
     font-size: 38px;
-    z-index: 1000;
+    z-index: 100;
     margin-top: 170px;
 }
 
@@ -56,6 +55,7 @@
     margin: 0 15px;
     font-weight: bold;
     transition: color 0.3s ease;
+    z-index: 100;
 }
 
 .navigation a:hover {
